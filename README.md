@@ -160,7 +160,7 @@ Examples:
 
 ### TODO
 
-Adding results of more awesome models on [Hugginface](https://huggingface.co/models?library=diffusers&sort=downloads).
+Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads).
 
 
 ## X-IQE: eXplainable Image Quality Evaluation
