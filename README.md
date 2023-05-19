@@ -18,7 +18,7 @@ Examples:
 <td rowspan="2">Model</td>
 <td rowspan="2">CLIP</td>
 <td rowspan="2">Aes. Pred.</td>
-<td rowspan="2">ImageReward</td>
+<td rowspan="2">Image Reward</td>
 <td rowspan="2">HPS</td>
 <td colspan="4">X-IQE</td>
 </tr>
@@ -98,7 +98,7 @@ Examples:
 <td rowspan="2">Model</td>
 <td rowspan="2">CLIP</td>
 <td rowspan="2">Aes. Pred.</td>
-<td rowspan="2">ImageReward</td>
+<td rowspan="2">Image Reward</td>
 <td rowspan="2">HPS</td>
 <td colspan="4">X-IQE</td>
 </tr>
