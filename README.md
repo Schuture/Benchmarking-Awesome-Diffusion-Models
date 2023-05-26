@@ -14,24 +14,15 @@ Examples:
 
 <table border="2" >
 	<tr >
-<td rowspan="2">Rank</td>
-<td rowspan="2">Model</td>
-<td rowspan="2">CLIP</td>
-<td rowspan="2">Aes. Pred.</td>
-<td rowspan="2">Image Reward</td>
-<td rowspan="2">HPS</td>
-<td colspan="4">X-IQE</td>
+<td rowspan="2">Rank</td><td rowspan="2">Model</td><td rowspan="2">CLIP</td>
+<td rowspan="2">Aes. Pred.</td><td rowspan="2">Image Reward</td><td rowspan="2">HPS</td><td colspan="4">X-IQE</td>
 </tr>
 <tr >
-<td>Fidelity</td>
-<td>Alignment</td>
-<td>Aesthetics</td>
-<td>Overall</td>
+<td>Fidelity</td><td>Alignment</td><td>Aesthetics</td><th>Overall</th>
 </tr>
 	<tr >
 <td>1</td>
-<td><a href="https://huggingface.co/DeepFloyd/IF-I-XL-v1.0">DeepFloyd-IF-XL</a></td>
-<td>0.828</td>        
+<td><a href="https://huggingface.co/DeepFloyd/IF-I-XL-v1.0">DeepFloyd-IF-XL</a></td><td>0.828</td>        
 <td>5.26</td>
 <td>0.703</td>
 <td>0.1994</td>
@@ -66,6 +57,42 @@ Examples:
 </tr>
 	<tr >
 <td>4</td>
+<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0</a></td>
+<td>0.824</td>
+<td>5.47</td>
+<td>0.399</td>
+<td>0.2021</td>
+<td>5.50</td>
+<td>3.33</td>
+<td>5.78</td>
+<td>14.61</td>
+</tr>
+	<tr >
+<td>5</td>
+<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
+<td>0.808</td>
+<td>5.22</td>
+<td>0.242</td>
+<td>0.1974</td>
+<td>5.48</td>
+<td>3.31</td>
+<td>5.79</td>
+<td>14.58</td>
+</tr>
+	<tr >
+<td>6</td>
+<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion</a></td>
+<td>0.810</td>
+<td>5.30</td>
+<td>0.265</td>
+<td>0.1982</td>
+<td>5.54</td>
+<td>3.31</td>
+<td>5.71</td>
+<td>14.56</td>
+</tr>
+	<tr >
+<td>7</td>
 <td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
 <td>0.803</td>
 <td>5.22</td>
@@ -76,7 +103,21 @@ Examples:
 <td>5.76</td>
 <td>14.52</td>
 </tr>
+	<tr >
+<td>8</td>
+<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
+<td>0.779</td>
+<td>5.19</td>
+<td>-0.245</td>
+<td>0.1927</td>
+<td>5.59</td>
+<td>2.97</td>
+<td>5.72</td>
+<td>14.28</td>
+</tr>
 </table>
+
+On COCO Captions, the evaluation methods reached similar conclusions, which reflects our intuition for these text-to-image algorithms (e.g., SD2.1>SD1.5>SD1.4). In addition, Openjourney performs the best among the methods fine-tuned on SD.
 
 
 ## DrawBench Benchmark
@@ -122,6 +163,18 @@ Examples:
 </tr>
 	<tr >
 <td>2</td>
+<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0</a></td>
+<td>0.815</td>
+<td>5.40</td>
+<td>0.260</td>
+<td>0.2000</td>
+<td>5.36</td>
+<td>2.80</td>
+<td>5.35</td>
+<td>13.51</td>
+</tr>
+	<tr >
+<td>3</td>
 <td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
 <td>0.793</td>
 <td>5.09</td>
@@ -133,7 +186,31 @@ Examples:
 <td>13.44</td>
 </tr>
 	<tr >
-<td>3</td>
+<td>4</td>
+<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
+<td>0.795</td>
+<td>5.14</td>
+<td>0.072</td>
+<td>0.1954</td>
+<td>5.18</td>
+<td>2.61</td>
+<td>5.35</td>
+<td>13.14</td>
+</tr>
+	<tr >
+<td>5</td>
+<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion</a></td>
+<td>0.792</td>
+<td>5.16</td>
+<td>0.069</td>
+<td>0.1951</td>
+<td>5.14</td>
+<td>2.63</td>
+<td>5.32</td>
+<td>13.09</td>
+</tr>
+	<tr >
+<td>6</td>
 <td><a href="https://huggingface.co/prompthero/openjourney">Openjourney</a></td>
 <td>0.787</td>
 <td>5.35</td>
@@ -145,7 +222,7 @@ Examples:
 <td>12.97</td>
 </tr>
 	<tr >
-<td>4</td>
+<td>7</td>
 <td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Stable Diffusion 2.1</a></td>
 <td>0.817</td>
 <td>5.31</td>
@@ -156,7 +233,21 @@ Examples:
 <td>5.04</td>
 <td>12.64</td>
 </tr>
+	<tr >
+<td>8</td>
+<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
+<td>0.756</td>
+<td>5.08</td>
+<td>-0.489</td>
+<td>0.1901</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
 </table>
+
+On DrawBench prompts, the results are not consistent with our intuition. This may due to the resampling of the more common prompts during the fine-tuning stage, negatively affecting the models' ability on hard prompts.
 
 ### TODO
 
@@ -178,9 +269,16 @@ A detailed process of evaluation is illustrated in the following:
 
 For more details about the method, or running the demo on your own, please see [X-IQE](/X-IQE/README.md)
 
+## Citation
 
+If you find the benchmark method and results useful in your research, please consider citing:
 
-
+    @article{chen2023x,
+	  title={X-IQE: eXplainable Image Quality Evaluation for Text-to-Image Generation with Visual Large Language Models},
+	  author={Chen, Yixiong},
+	  journal={arXiv preprint arXiv:2305.10843},
+	  year={2023}
+	}
 
 
 
