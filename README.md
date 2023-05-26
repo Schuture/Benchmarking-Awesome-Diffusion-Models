@@ -251,7 +251,7 @@ On DrawBench prompts, the results are not consistent with our intuition. This ma
 
 ### TODO
 
-Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads).
+Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix)).
 
 
 ## X-IQE: eXplainable Image Quality Evaluation
