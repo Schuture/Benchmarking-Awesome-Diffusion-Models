@@ -147,7 +147,7 @@ Examples:
 <td>Fidelity</td>
 <td>Alignment</td>
 <td>Aesthetics</td>
-<td>Overall</td>
+<th>Overall</th>
 </tr>
 	<tr >
 <td>1</td>
