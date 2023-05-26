@@ -187,6 +187,18 @@ Examples:
 </tr>
 	<tr >
 <td>4</td>
+<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
+<td>0.756</td>
+<td>5.08</td>
+<td>-0.489</td>
+<td>0.1901</td>
+<td>5.31</td>
+<td>2.52</td>
+<td>5.42</td>
+<td>13.25</td>
+</tr>
+	<tr >
+<td>5</td>
 <td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
 <td>0.795</td>
 <td>5.14</td>
@@ -198,7 +210,7 @@ Examples:
 <td>13.14</td>
 </tr>
 	<tr >
-<td>5</td>
+<td>6</td>
 <td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion</a></td>
 <td>0.792</td>
 <td>5.16</td>
@@ -210,7 +222,7 @@ Examples:
 <td>13.09</td>
 </tr>
 	<tr >
-<td>6</td>
+<td>7</td>
 <td><a href="https://huggingface.co/prompthero/openjourney">Openjourney</a></td>
 <td>0.787</td>
 <td>5.35</td>
@@ -222,7 +234,7 @@ Examples:
 <td>12.97</td>
 </tr>
 	<tr >
-<td>7</td>
+<td>8</td>
 <td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Stable Diffusion 2.1</a></td>
 <td>0.817</td>
 <td>5.31</td>
@@ -233,18 +245,7 @@ Examples:
 <td>5.04</td>
 <td>12.64</td>
 </tr>
-	<tr >
-<td>8</td>
-<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
-<td>0.756</td>
-<td>5.08</td>
-<td>-0.489</td>
-<td>0.1901</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
+
 </table>
 
 On DrawBench prompts, the results are not consistent with our intuition. This may due to the resampling of the more common prompts during the fine-tuning stage, negatively affecting the models' ability on hard prompts.
