@@ -267,7 +267,7 @@ On DrawBench prompts, the results are not consistent with COCO. The resampling o
 
 ## TODO
 
-1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix)).
+1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix)), [GLIDE](https://huggingface.co/fusing/glide-base).
 2. Adding illustrations of exemplar samples of evaluation.
 
 
