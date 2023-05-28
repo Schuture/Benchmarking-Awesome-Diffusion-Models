@@ -1,9 +1,9 @@
 # Benchmarking-Awesome-Diffusion-Models
-This is the repository of benchmark for text-to-image diffusion models. We used COCO Caption and DrawBench as prompt sets to evluate the models' capacity on generating common and uncommon images. The metrics considered in this repo are: [CLIPScore](https://github.com/jmhessel/clipscore), [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor), [ImageReward](https://github.com/THUDM/ImageReward), [Human Preference Score](https://tgxs002.github.io/align_sd_web/), and an explainable metric based on LLMs, [***X-IQE***](https://arxiv.org/pdf/2305.10843.pdf), introduced in our work. Hope this would help for your study and research.
+This is the repository of benchmarks for text-to-image diffusion models. We used COCO Caption and DrawBench as prompt sets to evaluate the models' capacity to generate common and uncommon images. The metrics considered in this repo are: 1) [CLIPScore](https://github.com/jmhessel/clipscore), 2) [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor), 3) [ImageReward](https://github.com/THUDM/ImageReward), 4) [Human Preference Score](https://tgxs002.github.io/align_sd_web/), and 5) an explainable metric based on LLMs, [***X-IQE***](https://arxiv.org/abs/2305.10843), introduced in our work. We hope this will help with your study and research.
 
 ## COCO Caption Benchmark
 
-We randomly sample 1000 captions from the [COCO Caption](https://github.com/tylin/coco-caption) dataset (2014). This prompt set mainly contains common human, animal, object, scene descriptions, and can evaluate the diffusion models' basic generation ability.
+We randomly sample 1000 captions from the [COCO Caption](https://github.com/tylin/coco-caption) dataset (2014). This prompt set mainly contains common human, animal, object, and scene descriptions. It can evaluate the diffusion models' basic generation ability.
 
 Examples:
 1. A man standing in a snowy forest on his skis.
@@ -122,7 +122,7 @@ On COCO Captions, the evaluation methods reached similar conclusions, which refl
 
 ## DrawBench Benchmark
 
-We use all 200 prompts from the [DrawBench](https://docs.google.com/spreadsheets/d/1y7nAbmR4FREi6npB1u-Bo3GFdwdOPYJc617rBOxIRHY/edit#gid=0) (2022). This prompt set mainly contains hard situations, and can evaluate the diffusion models' advanced generation capabilities.
+We use all 200 prompts from the [DrawBench](https://docs.google.com/spreadsheets/d/1y7nAbmR4FREi6npB1u-Bo3GFdwdOPYJc617rBOxIRHY/edit#gid=0) (2022). This prompt set mainly contains challenging situations, and can evaluate the diffusion models' advanced generation capabilities.
 
 Examples:
 1. A pink colored giraffe. (abnormal color)
@@ -268,7 +268,7 @@ A detailed process of evaluation is illustrated in the following:
 
 ![Illustration](Figs/method.jpg "Illustration")
 
-For more details about the method, or running the demo on your own, please see [X-IQE](/X-IQE/README.md)
+For more details about the method, or running the demo on your own, please see [this page](/X-IQE/README.md) of X-IQE.
 
 ## Citation
 
