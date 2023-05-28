@@ -1,5 +1,14 @@
 # Benchmarking-Awesome-Diffusion-Models
-This is the repository of benchmarks for text-to-image diffusion models. We used COCO Caption and DrawBench as prompt sets to evaluate the models' capacity to generate common and uncommon images. The metrics considered in this repo are: 1) [CLIPScore](https://github.com/jmhessel/clipscore), 2) [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor), 3) [ImageReward](https://github.com/THUDM/ImageReward), 4) [Human Preference Score](https://tgxs002.github.io/align_sd_web/), and 5) an explainable metric based on LLMs, [***X-IQE***](https://arxiv.org/abs/2305.10843), introduced in our work. We hope this will help with your study and research.
+This is the repository of benchmarks for text-to-image diffusion models. We used COCO Caption and DrawBench as prompt sets to evaluate the models' basic and advanced capacity to generate images based on texts. 
+
+The metrics considered in this repo are: 
+1) [CLIPScore](https://github.com/jmhessel/clipscore), 
+2) [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor)
+3) [ImageReward](https://github.com/THUDM/ImageReward)
+4) [Human Preference Score](https://tgxs002.github.io/align_sd_web/)
+5) [***X-IQE***](https://arxiv.org/abs/2305.10843), a comprehensive metric based on LLMs introduced in our work. 
+
+We hope this will help with your study and research.
 
 ## COCO Caption Benchmark
 
@@ -254,7 +263,7 @@ Examples:
 
 </table>
 
-On DrawBench prompts, the results are not consistent with our intuition. This may due to the resampling of the more common prompts during the fine-tuning stage, negatively affecting the models' ability on hard prompts.
+On DrawBench prompts, the results are not consistent with COCO. The resampling of the more common prompts during the fine-tuning stage (SD1.5, SD2.1, Openjourney) usually negatively affecting the models' ability on hard prompts.
 
 ## TODO
 
