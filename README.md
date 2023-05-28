@@ -3,6 +3,7 @@ This is the repository of benchmarks for text-to-image diffusion models. We used
 
 ## COCO Caption Benchmark
 
+### Benchmark Introduction
 We randomly sample 1000 captions from the [COCO Caption](https://github.com/tylin/coco-caption) dataset (2014). This prompt set mainly contains common human, animal, object, and scene descriptions. It can evaluate the diffusion models' basic generation ability.
 
 Examples:
@@ -12,6 +13,8 @@ Examples:
 4. A street vendor displaying various pieces of luggage for sale.
 5. White commuter train traveling in rural hillside area.
 
+
+### Rankings
 <table border="2" >
 	<tr >
 <td rowspan="2">Rank</td><td rowspan="2">Model</td><td rowspan="2">CLIP</td>
@@ -122,6 +125,7 @@ On COCO Captions, the evaluation methods reached similar conclusions, which refl
 
 ## DrawBench Benchmark
 
+### Benchmark Introduction
 We use all 200 prompts from the [DrawBench](https://docs.google.com/spreadsheets/d/1y7nAbmR4FREi6npB1u-Bo3GFdwdOPYJc617rBOxIRHY/edit#gid=0) (2022). This prompt set mainly contains challenging situations, and can evaluate the diffusion models' advanced generation capabilities.
 
 Examples:
@@ -133,6 +137,8 @@ Examples:
 6. Matutinal. (rare words)
 7. A storefront with 'Google Research Pizza Cafe' written on it. (text)
 
+
+### Rankings
 <table border="2" >
 	<tr >
 <td rowspan="2">Rank</td>
@@ -250,9 +256,10 @@ Examples:
 
 On DrawBench prompts, the results are not consistent with our intuition. This may due to the resampling of the more common prompts during the fine-tuning stage, negatively affecting the models' ability on hard prompts.
 
-### TODO
+## TODO
 
-Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix)).
+1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix)).
+2. Adding illustrations of exemplar samples of evaluation.
 
 
 ## X-IQE: eXplainable Image Quality Evaluation
