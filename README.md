@@ -181,7 +181,7 @@ Examples:
 </tr>
 </table>
 
-$Name^{SD}$ means the model was fine-tuned based on stable diffusion.
+($Name^{SD}$ means the model was fine-tuned based on stable diffusion)
 
 On COCO Captions, the evaluation methods reached similar conclusions, which reflects our intuition for these text-to-image algorithms (e.g., SD2.1>SD1.5>SD1.4). In addition, Openjourney performs the best among the methods fine-tuned on SD.
 
@@ -365,7 +365,7 @@ Examples:
 
 </table>
 
-$Name^{SD}$ means the model was fine-tuned based on stable diffusion.
+($Name^{SD}$ means the model was fine-tuned based on stable diffusion)
 
 On DrawBench prompts, the results are not consistent with COCO. The resampling of the more common prompts during the fine-tuning stage (SD1.5, SD2.1, Openjourney) usually negatively affecting the models' ability on hard prompts.
 
