@@ -274,7 +274,7 @@ Examples:
 		<td>13.51</td>
 	</tr>
 	<tr >
-	<td>6</td>
+	<td>4</td>
 	<td><a href="https://huggingface.co/XpucT/Deliberate">Deliberate<sup>SD</sup></a></td>
 		<td>0.821</td>
 		<td>0.815</td>
@@ -287,7 +287,7 @@ Examples:
 		<td>13.24</td>
 	</tr>
 	<tr >
-	<td>9</td>
+	<td>5</td>
 	<td><a href="https://huggingface.co/windwhinny/chilloutmix">ChilloutMix<sup>SD</sup></a></td>
 		<td>0.663</td>
 		<td>0.803</td>
@@ -300,7 +300,7 @@ Examples:
 		<td>13.04</td>
 	</tr>
 	<tr >
-	<td>4</td>
+	<td>6</td>
 	<td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
 		<td>0.625</td>
 		<td>0.793</td>
@@ -313,7 +313,7 @@ Examples:
 		<td>13.44</td>
 	</tr>
 	<tr >
-	<td>10</td>
+	<td>7</td>
 	<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney<sup>SD</sup></a></td>
 		<td>0.600</td>
 		<td>0.787</td>
@@ -326,7 +326,7 @@ Examples:
 		<td>12.97</td>
 	</tr>
 	<tr >
-	<td>7</td>
+	<td>8</td>
 	<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
 		<td>0.595</td>
 		<td>0.795</td>
@@ -339,7 +339,7 @@ Examples:
 		<td>13.14</td>
 	</tr>
 	<tr >
-	<td>12</td>
+	<td>9</td>
 	<td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Stable Diffusion 2.1</a></td>
 		<td>0.579</td>
 		<td>0.817</td>
@@ -352,7 +352,7 @@ Examples:
 		<td>12.64</td>
 	</tr>
 	<tr >
-	<td>8</td>
+	<td>10</td>
 	<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
 		<td>0.575</td>
 		<td>0.792</td>
@@ -365,7 +365,7 @@ Examples:
 		<td>13.09</td>
 	</tr>
 	<tr >
-	<td>5</td>
+	<td>11</td>
 	<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
 		<td>0.415</td>
 		<td>0.756</td>
@@ -378,7 +378,7 @@ Examples:
 		<td>13.25</td>
 	</tr>
 	<tr >
-	<td>11</td>
+	<td>12</td>
 	<td><a href="https://huggingface.co/microsoft/vq-diffusion-ithq">VQ Diffusion</a></td>
 		<td>0.047</td>
 		<td>0.741</td>
@@ -398,7 +398,7 @@ On DrawBench prompts, the results are not consistent with COCO. The resampling o
 
 ## TODO
 
-1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([VQ Diffusion](https://huggingface.co/microsoft/vq-diffusion-ithq), [Deliberate](https://huggingface.co/XpucT/Deliberate), [Realistic Vision](https://huggingface.co/SG161222/Realistic_Vision_V1.4), [ChilloutMix](https://huggingface.co/windwhinny/chilloutmix), [GLIDE](https://huggingface.co/fusing/glide-base), [DALL·E Mini](https://huggingface.co/kuprel/min-dalle), [LDM](https://huggingface.co/CompVis/ldm-text2im-large-256), [MajicMix Realistic](https://huggingface.co/stablediffusionapi/majicmixrealistic)).
+1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([GLIDE](https://huggingface.co/fusing/glide-base), [DALL·E Mini](https://huggingface.co/kuprel/min-dalle), [LDM](https://huggingface.co/CompVis/ldm-text2im-large-256), [MajicMix Realistic](https://huggingface.co/stablediffusionapi/majicmixrealistic)).
 2. Adding illustrations of exemplar samples of evaluation.
 
 
