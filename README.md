@@ -6,7 +6,11 @@ The metrics considered in this repo are:
 2) [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor)
 3) [ImageReward](https://github.com/THUDM/ImageReward)
 4) [Human Preference Score](https://tgxs002.github.io/align_sd_web/)
-5) [***X-IQE***](https://arxiv.org/abs/2305.10843), a comprehensive metric based on LLMs introduced in our work. 
+5) [***X-IQE***](https://arxiv.org/abs/2305.10843), a comprehensive and explainable metric based on MiniGPT-4. 
+
+The weighted average score is calculated as: 
+
+CLIPScore * 15% + AestheticPred * 15% + ImageReward * 20% + HPS * 20% + (X-IQE Fidelity + X-IQE Alignment + X-IQE Aesthetics) * 10%
 
 We hope this will help with your study and research.
 
@@ -45,7 +49,7 @@ Examples:
 </tr>
 	<tr >
 <td>2</td>
-<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney</a></td>
+<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney<sup>SD</sup></a></td>
 <td>0.806</td> 
 <td>5.38</td>
 <td>0.244</td>
@@ -69,7 +73,19 @@ Examples:
 </tr>
 	<tr >
 <td>4</td>
-<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0</a></td>
+<td><a href="https://huggingface.co/SG161222/Realistic_Vision_V1.4">Realistic Vision<sup>SD</sup></a></td>
+<td>0.825</td>
+<td>5.44</td>
+<td>0.551</td>
+<td>0.2023</td>
+<td>5.36</td>
+<td>3.39</td>
+<td>5.87</td>
+<td>14.62</td>
+</tr>
+	<tr >
+<td>5</td>
+<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0<sup>SD</sup></a></td>
 <td>0.824</td>
 <td>5.47</td>
 <td>0.399</td>
@@ -80,7 +96,7 @@ Examples:
 <td>14.61</td>
 </tr>
 	<tr >
-<td>5</td>
+<td>6</td>
 <td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
 <td>0.808</td>
 <td>5.22</td>
@@ -92,8 +108,8 @@ Examples:
 <td>14.58</td>
 </tr>
 	<tr >
-<td>6</td>
-<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion</a></td>
+<td>7</td>
+<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
 <td>0.810</td>
 <td>5.30</td>
 <td>0.265</td>
@@ -104,7 +120,7 @@ Examples:
 <td>14.56</td>
 </tr>
 	<tr >
-<td>7</td>
+<td>8</td>
 <td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
 <td>0.803</td>
 <td>5.22</td>
@@ -116,7 +132,31 @@ Examples:
 <td>14.52</td>
 </tr>
 	<tr >
-<td>8</td>
+<td>9</td>
+<td><a href="https://huggingface.co/XpucT/Deliberate">Deliberate<sup>SD</sup></a></td>
+<td>0.827</td>
+<td>5.41</td>
+<td>0.517</td>
+<td>0.2024</td>
+<td>5.35</td>
+<td>3.34</td>
+<td>5.81</td>
+<td>14.50</td>
+</tr>
+	<tr >
+<td>10</td>
+<td><a href="https://huggingface.co/windwhinny/chilloutmix">ChilloutMix<sup>SD</sup></a></td>
+<td>0.820</td>
+<td>5.46</td>
+<td>0.433</td>
+<td>0.2008</td>
+<td>5.40</td>
+<td>3.05</td>
+<td>5.87</td>
+<td>14.32</td>
+</tr>
+	<tr >
+<td>11</td>
 <td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
 <td>0.779</td>
 <td>5.19</td>
@@ -127,7 +167,21 @@ Examples:
 <td>5.72</td>
 <td>14.28</td>
 </tr>
+	<tr >
+<td>12</td>
+<td><a href="https://huggingface.co/microsoft/vq-diffusion-ithq">VQ Diffusion</a></td>
+<td>0.782</td>
+<td>4.62</td>
+<td>-0.618</td>
+<td>0.1889</td>
+<td>5.40</td>
+<td>2.83</td>
+<td>5.39</td>
+<td>13.62</td>
+</tr>
 </table>
+
+$Name^{SD}$ means the model was fine-tuned based on stable diffusion.
 
 On COCO Captions, the evaluation methods reached similar conclusions, which reflects our intuition for these text-to-image algorithms (e.g., SD2.1>SD1.5>SD1.4). In addition, Openjourney performs the best among the methods fine-tuned on SD.
 
@@ -178,7 +232,19 @@ Examples:
 </tr>
 	<tr >
 <td>2</td>
-<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0</a></td>
+<td><a href="https://huggingface.co/SG161222/Realistic_Vision_V1.4">Realistic Vision<sup>SD</sup></a></td>
+<td>0.813</td>
+<td>5.34</td>
+<td>0.370</td>
+<td>0.2009</td>
+<td>5.43</td>
+<td>2.79</td>
+<td>5.58</td>
+<td>13.80</td>
+</tr>
+	<tr >
+<td>3</td>
+<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0<sup>SD</sup></a></td>
 <td>0.815</td>
 <td>5.40</td>
 <td>0.260</td>
@@ -189,7 +255,7 @@ Examples:
 <td>13.51</td>
 </tr>
 	<tr >
-<td>3</td>
+<td>4</td>
 <td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
 <td>0.793</td>
 <td>5.09</td>
@@ -201,7 +267,7 @@ Examples:
 <td>13.44</td>
 </tr>
 	<tr >
-<td>4</td>
+<td>5</td>
 <td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
 <td>0.756</td>
 <td>5.08</td>
@@ -213,7 +279,19 @@ Examples:
 <td>13.25</td>
 </tr>
 	<tr >
-<td>5</td>
+<td>6</td>
+<td><a href="https://huggingface.co/XpucT/Deliberate">Deliberate<sup>SD</sup></a></td>
+<td>0.815</td>
+<td>5.40</td>
+<td>0.519</td>
+<td>0.2016</td>
+<td>5.21</td>
+<td>2.75</td>
+<td>5.28</td>
+<td>13.24</td>
+</tr>
+	<tr >
+<td>7</td>
 <td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
 <td>0.795</td>
 <td>5.14</td>
@@ -225,8 +303,8 @@ Examples:
 <td>13.14</td>
 </tr>
 	<tr >
-<td>6</td>
-<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion</a></td>
+<td>8</td>
+<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
 <td>0.792</td>
 <td>5.16</td>
 <td>0.069</td>
@@ -237,8 +315,20 @@ Examples:
 <td>13.09</td>
 </tr>
 	<tr >
-<td>7</td>
-<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney</a></td>
+<td>9</td>
+<td><a href="https://huggingface.co/windwhinny/chilloutmix">ChilloutMix<sup>SD</sup></a></td>
+<td>0.803</td>
+<td>5.34</td>
+<td>0.169</td>
+<td>0.1987</td>
+<td>5.07</td>
+<td>2.60</td>
+<td>5.37</td>
+<td>13.04</td>
+</tr>
+	<tr >
+<td>10</td>
+<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney<sup>SD</sup></a></td>
 <td>0.787</td>
 <td>5.35</td>
 <td>0.056</td>
@@ -249,7 +339,19 @@ Examples:
 <td>12.97</td>
 </tr>
 	<tr >
-<td>8</td>
+<td>11</td>
+<td><a href="https://huggingface.co/microsoft/vq-diffusion-ithq">VQ Diffusion</a></td>
+<td>0.741</td>
+<td>4.41</td>
+<td>-1.084</td>
+<td>0.1856</td>
+<td>5.16</td>
+<td>2.35</td>
+<td>5.17</td>
+<td>12.68</td>
+</tr>
+	<tr >
+<td>12</td>
 <td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Stable Diffusion 2.1</a></td>
 <td>0.817</td>
 <td>5.31</td>
@@ -262,6 +364,8 @@ Examples:
 </tr>
 
 </table>
+
+$Name^{SD}$ means the model was fine-tuned based on stable diffusion.
 
 On DrawBench prompts, the results are not consistent with COCO. The resampling of the more common prompts during the fine-tuning stage (SD1.5, SD2.1, Openjourney) usually negatively affecting the models' ability on hard prompts.
 
