@@ -12,7 +12,7 @@ The weighted average score is calculated as:
 
 CLIPScore * 15% + AestheticPred * 15% + ImageReward * 20% + HPS * 20% + (X-IQE Fidelity + X-IQE Alignment + X-IQE Aesthetics) * 10%
 
-We hope this will help with your study and research.
+All scores are normalized in [0,1], so the weighted average score will also be in [0,1], larger is better. We hope this project will help with your study and research.
 
 ## COCO Caption Benchmark
 
@@ -30,17 +30,17 @@ Examples:
 ### Rankings
 <table border="2" >
 	<tr >
-	<td rowspan="2">Rank</td>
-	<td rowspan="2">Model</td>
-	<td rowspan="2">Weighted Avg. Score</td>
-	<td rowspan="2">CLIP</td>
-	<td rowspan="2">Aes. Pred.</td>
-	<td rowspan="2">Image Reward</td>
-	<td rowspan="2">HPS</td>
-	<td colspan="4">X-IQE</td>
+	<th rowspan="2">Rank</th>
+	<th rowspan="2">Model</th>
+	<th rowspan="2">Weighted Avg. Score</th>
+	<th rowspan="2">CLIP</th>
+	<th rowspan="2">Aes. Pred.</th>
+	<th rowspan="2">Image Reward</th>
+	<th rowspan="2">HPS</th>
+	<th colspan="4">X-IQE</th>
 	</tr>
 	<tr >
-	<td>Fidelity</td><td>Alignment</td><td>Aesthetics</td><th>Overall</th>
+	<th>Fidelity</th><th>Alignment</th><th>Aesthetics</th><th>Overall</th>
 	</tr>
 	<tr >
 	<td>1</td>
@@ -57,16 +57,16 @@ Examples:
 	</tr>
 	<tr >
 	<td>2</td>
-	<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney<sup>SD</sup></a></td>
-		<td>0.708</td> 
-		<td>0.806</td> 
-		<td>5.38</td>
-		<td>0.244</td>
-		<td>0.1990</td>
-		<td>5.44</td>
-		<td>3.37</td>
-		<td>5.96</td>
-		<td>14.77</td>
+	<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0<sup>SD</sup></a></td>
+		<td>0.833</td>
+		<td>0.824</td>
+		<td>5.47</td>
+		<td>0.399</td>
+		<td>0.2021</td>
+		<td>5.50</td>
+		<td>3.33</td>
+		<td>5.78</td>
+		<td>14.61</td>
 	</tr>
 	<tr >
 	<td>3</td>
@@ -96,58 +96,6 @@ Examples:
 	</tr>
 	<tr >
 	<td>5</td>
-	<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0<sup>SD</sup></a></td>
-		<td>0.833</td>
-		<td>0.824</td>
-		<td>5.47</td>
-		<td>0.399</td>
-		<td>0.2021</td>
-		<td>5.50</td>
-		<td>3.33</td>
-		<td>5.78</td>
-		<td>14.61</td>
-	</tr>
-	<tr >
-	<td>6</td>
-	<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
-		<td>0.640</td>
-		<td>0.808</td>
-		<td>5.22</td>
-		<td>0.242</td>
-		<td>0.1974</td>
-		<td>5.48</td>
-		<td>3.31</td>
-		<td>5.79</td>
-		<td>14.58</td>
-	</tr>
-	<tr >
-	<td>7</td>
-	<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
-		<td>0.686</td>
-		<td>0.810</td>
-		<td>5.30</td>
-		<td>0.265</td>
-		<td>0.1982</td>
-		<td>5.54</td>
-		<td>3.31</td>
-		<td>5.71</td>
-		<td>14.56</td>
-	</tr>
-	<tr >
-	<td>8</td>
-	<td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
-		<td>0.580</td>
-		<td>0.803</td>
-		<td>5.22</td>
-		<td>0.104</td>
-		<td>0.1966</td>
-		<td>5.47</td>
-		<td>3.29</td>
-		<td>5.76</td>
-		<td>14.52</td>
-	</tr>
-	<tr >
-	<td>9</td>
 	<td><a href="https://huggingface.co/XpucT/Deliberate">Deliberate<sup>SD</sup></a></td>
 		<td>0.797</td>
 		<td>0.827</td>
@@ -160,7 +108,7 @@ Examples:
 		<td>14.50</td>
 	</tr>
 	<tr >
-	<td>10</td>
+	<td>6</td>
 	<td><a href="https://huggingface.co/windwhinny/chilloutmix">ChilloutMix<sup>SD</sup></a></td>
 		<td>0.739</td>
 		<td>0.820</td>
@@ -171,6 +119,58 @@ Examples:
 		<td>3.05</td>
 		<td>5.87</td>
 		<td>14.32</td>
+	</tr>
+	<tr >
+	<td>7</td>
+	<td><a href="https://huggingface.co/prompthero/openjourney">Openjourney<sup>SD</sup></a></td>
+		<td>0.708</td> 
+		<td>0.806</td> 
+		<td>5.38</td>
+		<td>0.244</td>
+		<td>0.1990</td>
+		<td>5.44</td>
+		<td>3.37</td>
+		<td>5.96</td>
+		<td>14.77</td>
+	</tr>
+	<tr >
+	<td>8</td>
+	<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
+		<td>0.686</td>
+		<td>0.810</td>
+		<td>5.30</td>
+		<td>0.265</td>
+		<td>0.1982</td>
+		<td>5.54</td>
+		<td>3.31</td>
+		<td>5.71</td>
+		<td>14.56</td>
+	</tr>
+	<tr >
+	<td>9</td>
+	<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
+		<td>0.640</td>
+		<td>0.808</td>
+		<td>5.22</td>
+		<td>0.242</td>
+		<td>0.1974</td>
+		<td>5.48</td>
+		<td>3.31</td>
+		<td>5.79</td>
+		<td>14.58</td>
+	</tr>
+	<tr >
+	<td>10</td>
+	<td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
+		<td>0.580</td>
+		<td>0.803</td>
+		<td>5.22</td>
+		<td>0.104</td>
+		<td>0.1966</td>
+		<td>5.47</td>
+		<td>3.29</td>
+		<td>5.76</td>
+		<td>14.52</td>
 	</tr>
 	<tr >
 	<td>11</td>
@@ -223,36 +223,20 @@ Examples:
 ### Rankings
 <table border="2" >
 	<tr >
-	<td rowspan="2">Rank</td>
-	<td rowspan="2">Model</td>
-	<td rowspan="2">Weighted Avg. Score</td>
-	<td rowspan="2">CLIP</td>
-	<td rowspan="2">Aes. Pred.</td>
-	<td rowspan="2">Image Reward</td>
-	<td rowspan="2">HPS</td>
-	<td colspan="4">X-IQE</td>
+	<th rowspan="2">Rank</th>
+	<th rowspan="2">Model</th>
+	<th rowspan="2">Weighted Avg. Score</th>
+	<th rowspan="2">CLIP</th>
+	<th rowspan="2">Aes. Pred.</th>
+	<th rowspan="2">Image Reward</th>
+	<th rowspan="2">HPS</th>
+	<th colspan="4">X-IQE</th>
 	</tr>
 	<tr >
-	<td>Fidelity</td>
-	<td>Alignment</td>
-	<td>Aesthetics</td>
-	<th>Overall</th>
+	<th>Fidelity</th><th>Alignment</th><th>Aesthetics</th><th>Overall</th>
 	</tr>
 	<tr >
 	<td>1</td>
-	<td><a href="https://huggingface.co/DeepFloyd/IF-I-XL-v1.0">DeepFloyd-IF-XL</a></td>
-		<td>0.875</td> 
-		<td>0.827</td> 
-		<td>5.10</td>
-		<td>0.54</td>
-		<td>0.1977</td>
-		<td>5.32</td>
-		<td>2.96</td>
-		<td>5.64</td>
-		<td>13.92</td>
-	</tr>
-	<tr >
-	<td>2</td>
 	<td><a href="https://huggingface.co/SG161222/Realistic_Vision_V1.4">Realistic Vision<sup>SD</sup></a></td>
 		<td>0.899</td>
 		<td>0.813</td>
@@ -265,6 +249,18 @@ Examples:
 		<td>13.80</td>
 	</tr>
 	<tr >
+	<td>2</td>
+	<td><a href="https://huggingface.co/DeepFloyd/IF-I-XL-v1.0">DeepFloyd-IF-XL</a></td>
+		<td>0.875</td> 
+		<td>0.827</td> 
+		<td>5.10</td>
+		<td>0.54</td>
+		<td>0.1977</td>
+		<td>5.32</td>
+		<td>2.96</td>
+		<td>5.64</td>
+		<td>13.92</td>
+	</tr>
 	<td>3</td>
 	<td><a href="https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal 2.0<sup>SD</sup></a></td>
 		<td>0.831</td>
@@ -276,32 +272,6 @@ Examples:
 		<td>2.80</td>
 		<td>5.35</td>
 		<td>13.51</td>
-	</tr>
-	<tr >
-	<td>4</td>
-	<td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
-		<td>0.625</td>
-		<td>0.793</td>
-		<td>5.09</td>
-		<td>-0.029</td>
-		<td>0.1945</td>
-		<td>5.32</td>
-		<td>2.72</td>
-		<td>5.40</td>
-		<td>13.44</td>
-	</tr>
-	<tr >
-	<td>5</td>
-	<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
-		<td>0.415</td>
-		<td>0.756</td>
-		<td>5.08</td>
-		<td>-0.489</td>
-		<td>0.1901</td>
-		<td>5.31</td>
-		<td>2.52</td>
-		<td>5.42</td>
-		<td>13.25</td>
 	</tr>
 	<tr >
 	<td>6</td>
@@ -317,32 +287,6 @@ Examples:
 		<td>13.24</td>
 	</tr>
 	<tr >
-	<td>7</td>
-	<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
-		<td>0.595</td>
-		<td>0.795</td>
-		<td>5.14</td>
-		<td>0.072</td>
-		<td>0.1954</td>
-		<td>5.18</td>
-		<td>2.61</td>
-		<td>5.35</td>
-		<td>13.14</td>
-	</tr>
-	<tr >
-	<td>8</td>
-	<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
-		<td>0.575</td>
-		<td>0.792</td>
-		<td>5.16</td>
-		<td>0.069</td>
-		<td>0.1951</td>
-		<td>5.14</td>
-		<td>2.63</td>
-		<td>5.32</td>
-		<td>13.09</td>
-	</tr>
-	<tr >
 	<td>9</td>
 	<td><a href="https://huggingface.co/windwhinny/chilloutmix">ChilloutMix<sup>SD</sup></a></td>
 		<td>0.663</td>
@@ -354,6 +298,19 @@ Examples:
 		<td>2.60</td>
 		<td>5.37</td>
 		<td>13.04</td>
+	</tr>
+	<tr >
+	<td>4</td>
+	<td><a href="https://huggingface.co/CompVis/stable-diffusion-v-1-4-original">Stable Diffusion 1.4</a></td>
+		<td>0.625</td>
+		<td>0.793</td>
+		<td>5.09</td>
+		<td>-0.029</td>
+		<td>0.1945</td>
+		<td>5.32</td>
+		<td>2.72</td>
+		<td>5.40</td>
+		<td>13.44</td>
 	</tr>
 	<tr >
 	<td>10</td>
@@ -369,17 +326,17 @@ Examples:
 		<td>12.97</td>
 	</tr>
 	<tr >
-	<td>11</td>
-	<td><a href="https://huggingface.co/microsoft/vq-diffusion-ithq">VQ Diffusion</a></td>
-		<td>0.047</td>
-		<td>0.741</td>
-		<td>4.41</td>
-		<td>-1.084</td>
-		<td>0.1856</td>
-		<td>5.16</td>
-		<td>2.35</td>
-		<td>5.17</td>
-		<td>12.68</td>
+	<td>7</td>
+	<td><a href="https://huggingface.co/runwayml/stable-diffusion-v1-5">Stable Diffusion 1.5</a></td>
+		<td>0.595</td>
+		<td>0.795</td>
+		<td>5.14</td>
+		<td>0.072</td>
+		<td>0.1954</td>
+		<td>5.18</td>
+		<td>2.61</td>
+		<td>5.35</td>
+		<td>13.14</td>
 	</tr>
 	<tr >
 	<td>12</td>
@@ -393,8 +350,46 @@ Examples:
 		<td>2.50</td>
 		<td>5.04</td>
 		<td>12.64</td>
-</tr>
-
+	</tr>
+	<tr >
+	<td>8</td>
+	<td><a href="https://huggingface.co/johnslegers/epic-diffusion">Epic Diffusion<sup>SD</sup></a></td>
+		<td>0.575</td>
+		<td>0.792</td>
+		<td>5.16</td>
+		<td>0.069</td>
+		<td>0.1951</td>
+		<td>5.14</td>
+		<td>2.63</td>
+		<td>5.32</td>
+		<td>13.09</td>
+	</tr>
+	<tr >
+	<td>5</td>
+	<td><a href="https://huggingface.co/shi-labs/versatile-diffusion">Versatile Diffusion</a></td>
+		<td>0.415</td>
+		<td>0.756</td>
+		<td>5.08</td>
+		<td>-0.489</td>
+		<td>0.1901</td>
+		<td>5.31</td>
+		<td>2.52</td>
+		<td>5.42</td>
+		<td>13.25</td>
+	</tr>
+	<tr >
+	<td>11</td>
+	<td><a href="https://huggingface.co/microsoft/vq-diffusion-ithq">VQ Diffusion</a></td>
+		<td>0.047</td>
+		<td>0.741</td>
+		<td>4.41</td>
+		<td>-1.084</td>
+		<td>0.1856</td>
+		<td>5.16</td>
+		<td>2.35</td>
+		<td>5.17</td>
+		<td>12.68</td>
+	</tr>
 </table>
 
 ($Name^{SD}$ means the model was fine-tuned based on stable diffusion)
