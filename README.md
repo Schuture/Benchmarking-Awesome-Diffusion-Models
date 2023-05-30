@@ -198,6 +198,45 @@ Examples:
 		<td>5.39</td>
 		<td>13.62</td>
 	</tr>
+	<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/CompVis/ldm-text2im-large-256">Latent Diffusion</a></td>
+		<td>0.029</td>
+		<td>0.795</td>
+		<td>4.40</td>
+		<td>-0.587</td>
+		<td>0.1881</td>
+		<td>5.42</td>
+		<td>2.71</td>
+		<td>5.58</td>
+		<td>13.71</td>
+	</tr>
+	<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/kuprel/min-dalle">DALL·E mini</a></td>
+		<td>0.029</td>
+		<td>0.807</td>
+		<td>4.72</td>
+		<td>-0.025</td>
+		<td>0.1901</td>
+		<td>5.52</td>
+		<td>2.96</td>
+		<td>5.78</td>
+		<td>14.26</td>
+	</tr>
+	<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic</a></td>
+		<td>0.029</td>
+		<td>0.828</td>
+		<td>5.60</td>
+		<td>0.477</td>
+		<td>0.2015</td>
+		<td>5.27</td>
+		<td>3.10</td>
+		<td>5.86</td>
+		<td>14.23</td>
+	</tr>
 </table>
 
 ($Name^{SD}$ means the model was fine-tuned based on stable diffusion)
@@ -389,6 +428,45 @@ Examples:
 		<td>2.35</td>
 		<td>5.17</td>
 		<td>12.68</td>
+	</tr>
+		<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/CompVis/ldm-text2im-large-256">Latent Diffusion</a></td>
+		<td>0.029</td>
+		<td>0.777</td>
+		<td>4.32</td>
+		<td>-0.476</td>
+		<td>0.1877</td>
+		<td>5.25</td>
+		<td>2.29</td>
+		<td>5.24</td>
+		<td>12.78</td>
+	</tr>
+	<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/kuprel/min-dalle">DALL·E mini</a></td>
+		<td>0.029</td>
+		<td>0.770</td>
+		<td>4.65</td>
+		<td>-0.250</td>
+		<td>0.1895</td>
+		<td>5.41</td>
+		<td>2.33</td>
+		<td>5.31</td>
+		<td>13.05</td>
+	</tr>
+	<tr >
+	<td>12</td>
+	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic</a></td>
+		<td>0.029</td>
+		<td>0.802</td>
+		<td>5.49</td>
+		<td>0.258</td>
+		<td>0.2001</td>
+		<td>5.33</td>
+		<td>2.57</td>
+		<td>5.31</td>
+		<td>13.21</td>
 	</tr>
 </table>
 
