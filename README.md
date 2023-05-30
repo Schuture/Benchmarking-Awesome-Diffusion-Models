@@ -476,7 +476,7 @@ On DrawBench prompts, the results are not consistent with COCO. The resampling o
 
 ## TODO
 
-1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads) ([GLIDE](https://huggingface.co/fusing/glide-base), [DALL·E Mini](https://huggingface.co/kuprel/min-dalle), [LDM](https://huggingface.co/CompVis/ldm-text2im-large-256), [MajicMix Realistic](https://huggingface.co/stablediffusionapi/majicmixrealistic)).
+1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads).
 2. Adding illustrations of exemplar samples of evaluation.
 
 
