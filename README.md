@@ -27,7 +27,7 @@ Examples:
 5. White commuter train traveling in rural hillside area.
 
 
-### Rankings
+### COCO Caption Rankings
 <table border="2" >
 	<tr >
 	<th rowspan="2">Rank</th>
@@ -259,7 +259,7 @@ Examples:
 7. A storefront with 'Google Research Pizza Cafe' written on it. (text)
 
 
-### Rankings
+### DrawBench Rankings
 <table border="2" >
 	<tr >
 	<th rowspan="2">Rank</th>
