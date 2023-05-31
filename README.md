@@ -243,6 +243,14 @@ Examples:
 
 On COCO Captions, the evaluation methods reached similar conclusions, which reflects our intuition for these text-to-image algorithms (e.g., SD2.1>SD1.5>SD1.4). In addition, Openjourney performs the best among the methods fine-tuned on SD.
 
+### Sample Illustration
+
+'''
+Prompt: A baseball player holding a bat on a field
+'''
+
+![Illustration](Figs/COCO_illustration.png "Illustration")
+
 
 ## DrawBench Benchmark
 
@@ -473,6 +481,12 @@ Examples:
 ($Name^{SD}$ means the model was fine-tuned based on stable diffusion)
 
 On DrawBench prompts, the results are not consistent with COCO. The resampling of the more common prompts during the fine-tuning stage (SD1.5, SD2.1, Openjourney) usually negatively affecting the models' ability on hard prompts.
+
+### Sample Illustration
+
+Prompt: A large thick-skinned semiaquatic African mammal, with massive jaws and large tusks
+
+![Illustration](Figs/DrawBench_illustration.png "Illustration")
 
 ## TODO
 
