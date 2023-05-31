@@ -492,8 +492,7 @@ Prompt: A large thick-skinned semiaquatic African mammal, with massive jaws and 
 
 ## TODO
 
-1. Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads).
-2. Adding illustrations of exemplar samples of evaluation.
+Adding results of more awesome models on [Huggingface](https://huggingface.co/models?library=diffusers&sort=downloads).
 
 
 ## X-IQE: eXplainable Image Quality Evaluation
