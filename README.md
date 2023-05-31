@@ -245,9 +245,9 @@ On COCO Captions, the evaluation methods reached similar conclusions, which refl
 
 ### Sample Illustration
 
-'''
+```
 Prompt: A baseball player holding a bat on a field
-'''
+```
 
 ![Illustration](Figs/COCO_illustration.png "Illustration")
 
@@ -484,7 +484,9 @@ On DrawBench prompts, the results are not consistent with COCO. The resampling o
 
 ### Sample Illustration
 
+```
 Prompt: A large thick-skinned semiaquatic African mammal, with massive jaws and large tusks
+```
 
 ![Illustration](Figs/DrawBench_illustration.png "Illustration")
 
