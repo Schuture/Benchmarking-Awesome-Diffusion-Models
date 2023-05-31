@@ -109,7 +109,7 @@ Examples:
 	</tr>
 	<tr >
 	<td>6</td>
-	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic</a></td>
+	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic<sup>SD</sup></a></td>
 		<td>0.775</td>
 		<td>0.828</td>
 		<td>5.60</td>
@@ -335,7 +335,7 @@ Examples:
 	</tr>
 	<tr >
 	<td>5</td>
-	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic</a></td>
+	<td><a href="https://huggingface.co/stablediffusionapi/majicmixrealistic">MajicMix Realistic<sup>SD</sup></a></td>
 		<td>0.762</td>
 		<td>0.802</td>
 		<td>5.49</td>
