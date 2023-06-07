@@ -6,7 +6,7 @@ The metrics considered in this repo are:
 2) [Improved Aesthetic Predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor), which measures how good-looking an image is
 3) [ImageReward](https://github.com/THUDM/ImageReward), which measures the human rating of an image
 4) [Human Preference Score](https://tgxs002.github.io/align_sd_web/), which measures the human preference of an image
-5) [***X-IQE***](https://arxiv.org/abs/2305.10843), a comprehensive and explainable metric based on MiniGPT-4
+5) [***X-IQE***](https://arxiv.org/abs/2305.10843), a comprehensive and explainable metric based on visual LLMs (MiniGPT-4)
 
 The weighted average score is calculated as: 
 
