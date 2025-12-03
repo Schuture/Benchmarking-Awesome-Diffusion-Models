@@ -1,5 +1,5 @@
 # Benchmarking-Awesome-Diffusion-Models
-This is the repository of benchmarks for text-to-image diffusion models (both community models and academic models). We used COCO Caption and DrawBench as prompt sets to evaluate the models' basic and advanced capabilities to generate images based on texts. 
+This is the repository of benchmarks for text-to-image diffusion models (both community models and academic models, [[paper]](https://arxiv.org/pdf/2305.10843) by Yixiong Chen et al.) We used COCO Caption and DrawBench as prompt sets to evaluate the models' basic and advanced capabilities to generate images based on texts. 
 
 The metrics considered in this repo are: 
 1) [CLIPScore](https://github.com/jmhessel/clipscore), which measures the text-image alignment
@@ -513,14 +513,14 @@ For more details about the method, or running the demo on your own, please see [
 ## Citation
 
 If you find the benchmark method and results useful in your research, please consider citing:
-
+```
     @article{chen2023x,
-	  title={X-IQE: eXplainable Image Quality Evaluation for Text-to-Image Generation with Visual Large Language Models},
-	  author={Chen, Yixiong},
-	  journal={arXiv preprint arXiv:2305.10843},
-	  year={2023}
-	}
-
+  title={X-iqe: explainable image quality evaluation for text-to-image generation with visual large language models},
+  author={Chen, Yixiong and Liu, Li and Ding, Chris},
+  journal={arXiv preprint arXiv:2305.10843},
+  year={2023}
+}
+```
 
 
 
